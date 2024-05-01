@@ -43,12 +43,13 @@
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.ActiveCaption;
             button1.Location = new Point(337, 149);
             button1.Name = "button1";
             button1.Size = new Size(122, 57);
             button1.TabIndex = 1;
             button1.Text = "login";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 

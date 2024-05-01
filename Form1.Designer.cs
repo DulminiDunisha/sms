@@ -1,4 +1,4 @@
-﻿namespace sms
+namespace sms
 {
     partial class Form1
     {
@@ -31,6 +31,7 @@
             label1 = new Label();
             button1 = new Button();
             checkBox1 = new CheckBox();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -44,31 +45,37 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Blue;
             button1.Location = new Point(385, 199);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(139, 76);
             button1.TabIndex = 1;
             button1.Text = "login";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(581, 294);
+            checkBox1.Location = new Point(424, 141);
+            checkBox1.Margin = new Padding(3, 4, 3, 4);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(81, 24);
             checkBox1.TabIndex = 2;
             checkBox1.Text = "dulmini";
             checkBox1.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            comboBox1.Location = new Point(0, 0);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 28);
+            comboBox1.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(1045, 800);
             Controls.Add(checkBox1);
             Controls.Add(button1);
             Controls.Add(label1);
@@ -84,5 +91,6 @@
         private Label label1;
         private Button button1;
         private CheckBox checkBox1;
+        private ComboBox comboBox1;
     }
 }

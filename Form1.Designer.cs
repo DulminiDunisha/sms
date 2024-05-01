@@ -1,4 +1,4 @@
-﻿namespace sms
+namespace sms
 {
     partial class Form1
     {

@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             button1 = new Button();
+            checkBox1 = new CheckBox();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -50,11 +52,20 @@
             button1.Text = "login";
             button1.UseVisualStyleBackColor = true;
             // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(581, 294);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(81, 24);
+            checkBox1.TabIndex = 2;
+            checkBox1.Text = "dulmini";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(checkBox1);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
@@ -67,5 +78,6 @@
 
         private Label label1;
         private Button button1;
+        private CheckBox checkBox1;
     }
 }

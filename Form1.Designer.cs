@@ -30,8 +30,11 @@ namespace sms
         {
             label1 = new Label();
             button1 = new Button();
+
+  textBox1 = new TextBox();
             checkBox1 = new CheckBox();
             comboBox1 = new ComboBox();
+
             SuspendLayout();
             // 
             // label1
@@ -45,13 +48,25 @@ namespace sms
             // 
             // button1
             // 
-            button1.Location = new Point(385, 199);
+
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.Location = new Point(337, 149);
+
+
             button1.Margin = new Padding(3, 4, 3, 4);
+
             button1.Name = "button1";
             button1.Size = new Size(139, 76);
             button1.TabIndex = 1;
             button1.Text = "login";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(334, 285);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(170, 23);
+            textBox1.TabIndex = 2;
             // 
             // checkBox1
             // 
@@ -75,8 +90,10 @@ namespace sms
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1045, 800);
-            Controls.Add(checkBox1);
+
+            ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+
             Controls.Add(button1);
             Controls.Add(label1);
             Margin = new Padding(3, 4, 3, 4);
@@ -90,7 +107,11 @@ namespace sms
 
         private Label label1;
         private Button button1;
+
+        private TextBox textBox1;
+
         private CheckBox checkBox1;
         private ComboBox comboBox1;
+
     }
 }
